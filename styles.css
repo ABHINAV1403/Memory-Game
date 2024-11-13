@@ -1,0 +1,99 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #202e3d;
+    font-family: 'Press Start 2P', cursive;
+  }
+  
+  /* Container for the entire game */
+  .game-container {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Title Styling */
+  #level-title {
+    font-size: 3rem; /* Increased text size */
+    color: #FEF2BF;
+    margin-bottom: 2rem;
+  }
+  
+  /* Container for the buttons */
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Row styling to center the button rows */
+  .row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  /* Button styling with larger dimensions */
+  .btn {
+    width: 150px; /* Increased button size */
+    height: 150px;
+    border: 8px solid black;
+    border-radius: 15%;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.1s;
+  }
+  
+  /* Active button click effect */
+  .btn:active {
+    transform: scale(0.9);
+  }
+  
+  /* Color-specific button styles */
+  .red {
+    background-color: red;
+  }
+  
+  .green {
+    background-color: green;
+  }
+  
+  .blue {
+    background-color: blue;
+  }
+  
+  .yellow {
+    background-color: yellow;
+  }
+  
+  /* Animation for button press */
+  .pressed {
+    box-shadow: 0 0 15px white;
+    background-color: grey;
+  }
+  
+  /* Styling for game over state */
+  .game-over {
+    background-color: red;
+    opacity: 0.8;
+  }
+  
+  /* Footer styling */
+  /* Footer styling with reduced size */
+footer {
+    font-size: 0.8rem; /* Reduced font size */
+    color: #FEF2BF;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  
